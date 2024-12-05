@@ -1,0 +1,92 @@
+/* Общий стиль */
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .profile-card {
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 375px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .location {
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .bio {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    transform: scale(1.05);
+  }
+  
+  .btn:focus {
+    outline: 2px solid hsl(75, 94%, 57%);
+    outline-offset: 4px;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+    background-color: hsl(0, 0%, 30%);
+  }
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .attribution a {
+    color: hsl(75, 94%, 57%);
+    text-decoration: none;
+  }
+  
